@@ -12,12 +12,14 @@
         <module name="service-feign" />
         <module name="eureka" />
         <module name="eureka-hi" />
+        <module name="config-client" />
         <module name="hystrix-dashboard-turbine" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-client" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="eureka-ha" options="-parameters" />

@@ -17,6 +17,10 @@
             <!--无法引入：spring-cloud-config-server-->
             <artifactId>spring-cloud-config-client</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-kafka</artifactId>
+        </dependency>
     </dependencies>
     <name>config-client</name>
     <packaging>jar</packaging>

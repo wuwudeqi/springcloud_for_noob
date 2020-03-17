@@ -11,3 +11,19 @@ spring:
           search-paths: config-repo                              # git仓库地址下的相对地址，可以配置多个，用,分割。
           username: wuwudeqi                              # git仓库的账号
           password: fu.ai102                              # git密码
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+    bus:
+      trace:
+        enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
